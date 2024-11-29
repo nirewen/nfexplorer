@@ -1,0 +1,2283 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "nfeProc": {
+      "type": "object",
+      "properties": {
+        "xmlns": {
+          "type": "string"
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "protNFe": {
+                "type": "object",
+                "properties": {
+                  "children": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "infProt": {
+                          "type": "object",
+                          "properties": {
+                            "children": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "nProt": {
+                                    "type": "object",
+                                    "properties": {
+                                      "content": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "digVal": {
+                                    "type": "object",
+                                    "properties": {
+                                      "content": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "verAplic": {
+                                    "type": "object",
+                                    "properties": {
+                                      "content": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "dhRecbto": {
+                                    "type": "object",
+                                    "properties": {
+                                      "content": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "chNFe": {
+                                    "type": "object",
+                                    "properties": {
+                                      "content": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "xMotivo": {
+                                    "type": "object",
+                                    "properties": {
+                                      "content": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "tpAmb": {
+                                    "type": "object",
+                                    "properties": {
+                                      "content": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "cStat": {
+                                    "type": "object",
+                                    "properties": {
+                                      "content": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "xmlns:ns2": {
+                    "type": "string"
+                  },
+                  "versao": {
+                    "type": "string"
+                  }
+                }
+              },
+              "NFe": {
+                "type": "object",
+                "properties": {
+                  "xmlns": {
+                    "type": "string"
+                  },
+                  "children": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "infNFe": {
+                          "type": "object",
+                          "properties": {
+                            "children": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "infAdic": {
+                                    "type": "object",
+                                    "properties": {
+                                      "children": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "obsCont": {
+                                              "type": "object",
+                                              "properties": {
+                                                "xCampo": {
+                                                  "type": "string"
+                                                },
+                                                "children": {
+                                                  "type": "array",
+                                                  "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "xTexto": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "infCpl": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "infAdFisco": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "compra": {
+                                    "type": "object",
+                                    "properties": {
+                                      "children": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "xPed": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "infRespTec": {
+                                    "type": "object",
+                                    "properties": {
+                                      "children": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "fone": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "CNPJ": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "xContato": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "email": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "ide": {
+                                    "type": "object",
+                                    "properties": {
+                                      "children": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "tpNF": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "mod": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "indPres": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "tpImp": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "nNF": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "cMunFG": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "procEmi": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "finNFe": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "dhEmi": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "tpAmb": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "indFinal": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "dhSaiEnt": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "idDest": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "tpEmis": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "cDV": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "cUF": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "NFref": {
+                                              "type": "object",
+                                              "properties": {
+                                                "children": {
+                                                  "type": "array",
+                                                  "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "refNFe": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "serie": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "natOp": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "cNF": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "verProc": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "indIntermed": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "infIntermed": {
+                                    "type": "object",
+                                    "properties": {
+                                      "children": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "CNPJ": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "idCadIntTran": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "dest": {
+                                    "type": "object",
+                                    "properties": {
+                                      "children": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "xNome": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "CPF": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "enderDest": {
+                                              "type": "object",
+                                              "properties": {
+                                                "children": {
+                                                  "type": "array",
+                                                  "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "xCpl": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "fone": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "UF": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "xPais": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "cPais": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "xLgr": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "xMun": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "nro": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "cMun": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "xBairro": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "CEP": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "indIEDest": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "email": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "transp": {
+                                    "type": "object",
+                                    "properties": {
+                                      "children": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "modFrete": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "vol": {
+                                              "type": "object",
+                                              "properties": {
+                                                "children": {
+                                                  "type": "array",
+                                                  "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "pesoL": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "esp": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "qVol": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "pesoB": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "transporta": {
+                                              "type": "object",
+                                              "properties": {
+                                                "children": {
+                                                  "type": "array",
+                                                  "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "xNome": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "UF": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "xEnder": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "xMun": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "CNPJ": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "IE": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "det": {
+                                    "type": "object",
+                                    "properties": {
+                                      "nItem": {
+                                        "type": "string"
+                                      },
+                                      "children": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "prod": {
+                                              "type": "object",
+                                              "properties": {
+                                                "children": {
+                                                  "type": "array",
+                                                  "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "xPed": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "cEAN": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "cProd": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "qCom": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "cEANTrib": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vUnTrib": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "qTrib": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vProd": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "xProd": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vUnCom": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "nItemPed": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "indTot": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "uTrib": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "NCM": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "uCom": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "CFOP": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "CEST": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vFrete": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "imposto": {
+                                              "type": "object",
+                                              "properties": {
+                                                "children": {
+                                                  "type": "array",
+                                                  "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "vTotTrib": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "ICMS": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "children": {
+                                                            "type": "array",
+                                                            "items": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "ICMSSN102": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "children": {
+                                                                      "type": "array",
+                                                                      "items": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                          "orig": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "CSOSN": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "ICMS00": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "children": {
+                                                                      "type": "array",
+                                                                      "items": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                          "modBC": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "orig": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "CST": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "vBC": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "vICMS": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "pICMS": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "ICMSUFDest": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "children": {
+                                                            "type": "array",
+                                                            "items": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "vBCFCPUFDest": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "content": {
+                                                                      "type": "string"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "pICMSInter": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "content": {
+                                                                      "type": "string"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "vICMSUFDest": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "content": {
+                                                                      "type": "string"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "vICMSUFRemet": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "content": {
+                                                                      "type": "string"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "pICMSInterPart": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "content": {
+                                                                      "type": "string"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "vFCPUFDest": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "content": {
+                                                                      "type": "string"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "pFCPUFDest": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "content": {
+                                                                      "type": "string"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "vBCUFDest": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "content": {
+                                                                      "type": "string"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "pICMSUFDest": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "content": {
+                                                                      "type": "string"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "IPI": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "children": {
+                                                            "type": "array",
+                                                            "items": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "IPINT": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "children": {
+                                                                      "type": "array",
+                                                                      "items": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                          "CST": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "cEnq": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "content": {
+                                                                      "type": "string"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "IPITrib": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "children": {
+                                                                      "type": "array",
+                                                                      "items": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                          "CST": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "vBC": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "pIPI": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "vIPI": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "COFINS": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "children": {
+                                                            "type": "array",
+                                                            "items": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "COFINSOutr": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "children": {
+                                                                      "type": "array",
+                                                                      "items": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                          "vCOFINS": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "CST": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "vBC": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "pCOFINS": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "COFINSAliq": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "children": {
+                                                                      "type": "array",
+                                                                      "items": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                          "vCOFINS": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "CST": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "vBC": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "pCOFINS": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "COFINSNT": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "children": {
+                                                                      "type": "array",
+                                                                      "items": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                          "CST": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "PIS": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "children": {
+                                                            "type": "array",
+                                                            "items": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "PISAliq": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "children": {
+                                                                      "type": "array",
+                                                                      "items": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                          "vPIS": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "CST": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "vBC": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          },
+                                                                          "pPIS": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "PISNT": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "children": {
+                                                                      "type": "array",
+                                                                      "items": {
+                                                                        "type": "object",
+                                                                        "properties": {
+                                                                          "CST": {
+                                                                            "type": "object",
+                                                                            "properties": {
+                                                                              "content": {
+                                                                                "type": "string"
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "infAdProd": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "total": {
+                                    "type": "object",
+                                    "properties": {
+                                      "children": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "ICMSTot": {
+                                              "type": "object",
+                                              "properties": {
+                                                "children": {
+                                                  "type": "array",
+                                                  "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "vICMSUFDest": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vICMSUFRemet": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vCOFINS": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vBCST": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vICMSDeson": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vFCPUFDest": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vProd": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vSeg": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vFCP": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vFCPST": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vNF": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vTotTrib": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vPIS": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vIPIDevol": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vBC": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vST": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vICMS": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vII": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vFCPSTRet": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vDesc": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vOutro": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vIPI": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vFrete": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "cobr": {
+                                    "type": "object",
+                                    "properties": {
+                                      "children": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "fat": {
+                                              "type": "object",
+                                              "properties": {
+                                                "children": {
+                                                  "type": "array",
+                                                  "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "vOrig": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "nFat": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vDesc": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vLiq": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "dup": {
+                                              "type": "object",
+                                              "properties": {
+                                                "children": {
+                                                  "type": "array",
+                                                  "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "dVenc": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "nDup": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "vDup": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "pag": {
+                                    "type": "object",
+                                    "properties": {
+                                      "children": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "detPag": {
+                                              "type": "object",
+                                              "properties": {
+                                                "children": {
+                                                  "type": "array",
+                                                  "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "vPag": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "tPag": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "indPag": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "card": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "children": {
+                                                            "type": "array",
+                                                            "items": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "tpIntegra": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "content": {
+                                                                      "type": "string"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "cAut": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "content": {
+                                                                      "type": "string"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "CNPJ": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "content": {
+                                                                      "type": "string"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "tBand": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "content": {
+                                                                      "type": "string"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "entrega": {
+                                    "type": "object",
+                                    "properties": {
+                                      "children": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "xNome": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "UF": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "xPais": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "cPais": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "CPF": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "xLgr": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "xMun": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "nro": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "cMun": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "xBairro": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "CEP": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "autXML": {
+                                    "type": "object",
+                                    "properties": {
+                                      "children": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "CPF": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "emit": {
+                                    "type": "object",
+                                    "properties": {
+                                      "children": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "xNome": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "CRT": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "xFant": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "CNPJ": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "enderEmit": {
+                                              "type": "object",
+                                              "properties": {
+                                                "children": {
+                                                  "type": "array",
+                                                  "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "xCpl": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "fone": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "UF": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "xPais": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "cPais": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "xLgr": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "xMun": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "nro": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "cMun": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "xBairro": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "CEP": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "IE": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "IEST": {
+                                              "type": "object",
+                                              "properties": {
+                                                "content": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "Id": {
+                              "type": "string"
+                            },
+                            "versao": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "Signature": {
+                          "type": "object",
+                          "properties": {
+                            "xmlns": {
+                              "type": "string"
+                            },
+                            "children": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "SignatureValue": {
+                                    "type": "object",
+                                    "properties": {
+                                      "content": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "KeyInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                      "children": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "X509Data": {
+                                              "type": "object",
+                                              "properties": {
+                                                "children": {
+                                                  "type": "array",
+                                                  "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "X509Certificate": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "SignedInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                      "children": {
+                                        "type": "array",
+                                        "items": {
+                                          "type": "object",
+                                          "properties": {
+                                            "Reference": {
+                                              "type": "object",
+                                              "properties": {
+                                                "children": {
+                                                  "type": "array",
+                                                  "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                      "Transforms": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "children": {
+                                                            "type": "array",
+                                                            "items": {
+                                                              "type": "object",
+                                                              "properties": {
+                                                                "Transform": {
+                                                                  "type": "object",
+                                                                  "properties": {
+                                                                    "Algorithm": {
+                                                                      "type": "string"
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      },
+                                                      "DigestMethod": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "Algorithm": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      },
+                                                      "DigestValue": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                          "content": {
+                                                            "type": "string"
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                "URI": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "CanonicalizationMethod": {
+                                              "type": "object",
+                                              "properties": {
+                                                "Algorithm": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            },
+                                            "SignatureMethod": {
+                                              "type": "object",
+                                              "properties": {
+                                                "Algorithm": {
+                                                  "type": "string"
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "versao": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
