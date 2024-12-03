@@ -83,9 +83,11 @@
       </div>
       <div class="ml-7 flex flex-col gap-1">
         {#each Object.entries(sortObjectByValue(infos.tax)) as [tax, value]}
-          <div class="flex gap-1">
-            <span class="w-fit whitespace-nowrap rounded-md bg-neutral-600 px-2 py-1">{tax}</span>
-            <span class="w-fit whitespace-nowrap rounded-md bg-neutral-600 px-2 py-1">R$ {value.toFixed(2)}</span>
+          <div class="flex w-fit rounded-md border border-neutral-600">
+            <span class="whitespace-nowrap px-2 py-1">{tax}</span>
+            <span class="whitespace-nowrap bg-neutral-600 px-2 py-1">
+              R$ {value.toFixed(2)}
+            </span>
           </div>
         {/each}
       </div>

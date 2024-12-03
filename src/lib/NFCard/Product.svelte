@@ -102,11 +102,9 @@
           </span>
           <span class="flex flex-col gap-1 whitespace-nowrap">
             {#each impostos as [tax, value]}
-              <div class="flex gap-1">
-                <span class="w-fit rounded-md bg-neutral-700 px-2 py-1 outline outline-1 outline-neutral-600">
-                  {tax}
-                </span>
-                <span class="w-fit rounded-md bg-neutral-700 px-2 py-1 outline outline-1 outline-neutral-600">
+              <div class="-my-px flex w-fit rounded-md border border-neutral-600">
+                <span class="whitespace-nowrap px-2 py-1">{tax}</span>
+                <span class="whitespace-nowrap bg-neutral-600 px-2 py-1">
                   R$ {value.toFixed(2)}
                 </span>
               </div>
