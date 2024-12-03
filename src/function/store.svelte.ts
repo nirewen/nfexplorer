@@ -8,6 +8,15 @@ import type { NFFile } from '../types/NFFile'
 const ajv = new Ajv()
 const validate = ajv.compile(schema)
 
+export type NFFilter = {
+  supplier: string
+  carrier: string
+}
+
+export const filter = writable<NFFilter>({
+  supplier: '',
+  carrier: '',
+})
 export const files = writable<FileList>()
 export const filesJson = derived<Writable<FileList>, Record<string, NFFile>>(
   files,

@@ -41,7 +41,7 @@
       </span>
     {/if}
     <button
-      class="flex w-fit cursor-default items-center gap-1 rounded-md bg-neutral-600 px-2 py-1 active:bg-neutral-500"
+      class="flex w-fit cursor-default items-center gap-1 rounded-md bg-neutral-600 px-2 py-1 shadow-sm active:bg-neutral-500"
       onclick={downloadReceipt}
     >
       <DownloadIcon />

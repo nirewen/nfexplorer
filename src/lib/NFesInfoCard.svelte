@@ -1,19 +1,22 @@
 <script lang="ts">
   import BoxIcon from '~icons/fluent/box-20-regular'
+  import SupplierIcon from '~icons/fluent/box-multiple-20-regular'
   import CalcIcon from '~icons/fluent/calculator-20-regular'
+  import DismissIcon from '~icons/fluent/dismiss-20-regular'
   import ReceiptIcon from '~icons/fluent/receipt-20-regular'
-  import ShoppingBagPercent from '~icons/fluent/shopping-bag-percent-20-regular'
+  import ShoppingBagPercentIcon from '~icons/fluent/shopping-bag-percent-20-regular'
+  import CarrierIcon from '~icons/fluent/vehicle-truck-bag-20-regular'
 
   import { query } from '../function/query'
-  import { filesJson } from '../function/store.svelte'
+  import { filesJson, filter } from '../function/store.svelte'
   import { sortObjectByValue } from '../function/util'
 
   $: infos = query($filesJson, {
     totalReceipts: ['$..nfeProc', elements => elements.length],
     totalProducts: ['$..prod', elements => elements.length],
     totalPrice: ['$..prod..vUnTrib.content', elements => elements.map(Number).reduce((sum, curr) => sum + curr, 0)],
-    suppliers: ['$..emit..xNome.content', elements => elements.toSorted()],
-    carriers: ['$..transp..xNome.content', elements => elements.toSorted()],
+    suppliers: ['$..emit..xNome.content', elements => elements.toSorted() as string[]],
+    carriers: ['$..transp..xNome.content', elements => [...new Set(elements)].toSorted() as string[]],
     tax: [
       "$..total..ICMSTot..[?(['vICMS', 'vIPI', 'vPIS', 'vCOFINS'].includes(@property))].content",
       elements => {
@@ -32,6 +35,14 @@
       },
     ],
   })
+
+  function selectSupplier(supplier: string) {
+    $filter.supplier = supplier
+  }
+
+  function selectCarrier(carrier: string) {
+    $filter.carrier = carrier
+  }
 </script>
 
 <div
@@ -67,7 +78,7 @@
   {#if Object.values(infos.tax).some(value => value > 0)}
     <div class="flex flex-col gap-1">
       <div class="flex items-center gap-2">
-        <ShoppingBagPercent />
+        <ShoppingBagPercentIcon />
         <span class="whitespace-nowrap">Total de impostos</span>
       </div>
       <div class="ml-7 flex flex-col gap-1">
@@ -75,6 +86,64 @@
           <div class="flex gap-1">
             <span class="w-fit whitespace-nowrap rounded-md bg-neutral-600 px-2 py-1">{tax}</span>
             <span class="w-fit whitespace-nowrap rounded-md bg-neutral-600 px-2 py-1">R$ {value.toFixed(2)}</span>
+          </div>
+        {/each}
+      </div>
+    </div>
+  {/if}
+  {#if infos.suppliers.length > 0}
+    <div class="flex flex-col gap-1">
+      <div class="flex items-center gap-2">
+        <SupplierIcon />
+        <span class="whitespace-nowrap">Fonecedores</span>
+      </div>
+      <div class="ml-7 flex flex-col gap-1">
+        {#each infos.suppliers as supplier}
+          <div class="flex">
+            <button
+              class="w-full cursor-default truncate rounded-md bg-neutral-600 px-2 py-1 text-left shadow-sm active:bg-neutral-500"
+              class:rounded-r-none={supplier === $filter.supplier}
+              onclick={() => selectSupplier(supplier)}
+            >
+              {supplier}
+            </button>
+            {#if supplier === $filter.supplier}
+              <button
+                class="cursor-default truncate rounded-md rounded-l-none bg-neutral-600 px-2 py-1 shadow-sm active:bg-neutral-500"
+                onclick={() => selectSupplier('')}
+              >
+                <DismissIcon />
+              </button>
+            {/if}
+          </div>
+        {/each}
+      </div>
+    </div>
+  {/if}
+  {#if infos.carriers.length > 0}
+    <div class="flex flex-col gap-1">
+      <div class="flex items-center gap-2">
+        <CarrierIcon />
+        <span class="whitespace-nowrap">Transportadores</span>
+      </div>
+      <div class="ml-7 flex flex-col gap-1">
+        {#each infos.carriers as carrier}
+          <div class="flex">
+            <button
+              class="w-full cursor-default truncate rounded-md bg-neutral-600 px-2 py-1 text-left shadow-sm active:bg-neutral-500"
+              class:rounded-r-none={carrier === $filter.carrier}
+              onclick={() => selectCarrier(carrier)}
+            >
+              {carrier}
+            </button>
+            {#if carrier === $filter.carrier}
+              <button
+                class="cursor-default truncate rounded-md rounded-l-none bg-neutral-600 px-2 py-1 shadow-sm active:bg-neutral-500"
+                onclick={() => selectCarrier('')}
+              >
+                <DismissIcon />
+              </button>
+            {/if}
           </div>
         {/each}
       </div>

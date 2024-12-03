@@ -16,7 +16,7 @@
 </script>
 
 <div
-  class="flex flex-col divide-y divide-neutral-600 rounded-lg border border-neutral-500 bg-neutral-700 text-white outline outline-1 outline-neutral-900"
+  class="m-px flex flex-col divide-y divide-neutral-600 rounded-lg border border-neutral-500 bg-neutral-700 text-white outline outline-1 outline-neutral-900"
 >
   <Header {file} />
   {#each result.produtos as produto}
