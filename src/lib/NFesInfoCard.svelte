@@ -46,7 +46,7 @@
 </script>
 
 <div
-  class="m-px flex h-max flex-col gap-2 rounded-lg border border-neutral-500 bg-neutral-700 p-3 text-white outline outline-1 outline-neutral-900"
+  class="m-px flex h-max flex-col gap-2 rounded-xl border border-neutral-500 bg-neutral-700 p-3 text-white outline outline-1 outline-neutral-900"
 >
   <div class="flex flex-col gap-1">
     <div class="flex items-center gap-2">

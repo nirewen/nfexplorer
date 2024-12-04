@@ -5,3 +5,7 @@
 body {
   @apply m-0 select-none overflow-hidden;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
