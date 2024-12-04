@@ -1,6 +1,26 @@
+import Ajv from 'ajv'
+import { convertXML } from 'simple-xml-to-json'
+import schema from '../assets/nfe.schema.json'
+
 import type { NFFile } from '../types/NFFile'
 import { query } from './query'
 import type { NFFilter } from './store.svelte'
+
+const ajv = new Ajv()
+const validate = ajv.compile(schema)
+
+export async function xmlToJson(file: File) {
+  const text = await file.text()
+  const json = convertXML(text)
+
+  return {
+    name: file.name,
+    text,
+    json,
+    valid: validate(json),
+    errors: validate.errors,
+  }
+}
 
 export function truncate(value: string, length: number, ellipsis = '...') {
   return value.length > length ? value.slice(0, length).trim() + ellipsis : value.trim()
